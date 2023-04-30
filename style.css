@@ -1,0 +1,99 @@
+* {
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #121213;
+}
+
+/* Using . (dot) to grab this out of the class of the div, rather than the body above */
+
+.game-container {
+  /* height is 90% of the viewport?~?*/
+  height: 90svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  text-align: center;
+  /* width: 510px; */
+  width: 70%;
+  border-bottom: solid 1px #3a3a3c;
+  font-size: 2svh;
+  height: 7.5svh;
+}
+
+.tile-container {
+  /* width: 330px;
+  margin-bottom: 30px; */
+  width: 60%;
+  margin-top: 2svh;
+  margin-bottom: 5svh;
+}
+
+.tile-container div {
+  display: flex;
+  justify-content: center;
+}
+
+.tile-container .tile {
+  /* width: 62px;
+  height: 62px; */
+  height: 8svh;
+  width: 8svh;
+  border: 2px solid#3a3a3c;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 2px;
+}
+
+.key-container {
+  width: 70svh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-container button {
+  /* width: 43px;
+  height: 58px; */
+  height: 7svh;
+  width: 6svh;
+  border-radius: 1svh;
+  border: none;
+  background-color: #818384;
+  margin: 0.5svh;
+  font-size: 3svh;
+}
+
+.key-container button#ENTER,
+.key-container button#\<\< {
+  /* width: 68px; */
+  width: 9.5svh;
+  font-size: 2svh;
+}
+
+.key-container button#A {
+  margin-left: 4svh;
+}
+
+.message-container {
+  margin-top: 1svh;
+  height: 6svh;
+  margin-bottom: 1svh;
+}
+
+p {
+  background-color: #818384;
+  border-radius: 2svh;
+  padding: 2svh;
+  margin: 0;
+  font-size: 3svh;
+}
